@@ -4,11 +4,11 @@ require('dotenv').config();
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
+    client.channels.get(`728912408344526889`).send(`Text`)
 });
 
-
 client.on('message', msg => {
-    if (msg.author.bot || !msg.channel.id == 728912408344526889) return;
+    if (msg.author.bot || !msg.channel.id == '728912408344526889') return;
     global.lastMessenger = msg.author.id;
 
     setTimeout(function () {
