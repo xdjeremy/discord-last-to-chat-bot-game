@@ -4,7 +4,7 @@ require('dotenv').config();
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    client.channels.get(`728912408344526889`).send(`Text`)
+    client.channels.get(`728912408344526889`).send(`Im now watching this event.`)
 });
 
 client.on('message', msg => {
