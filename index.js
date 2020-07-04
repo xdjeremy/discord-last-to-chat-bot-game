@@ -19,7 +19,7 @@ client.on('message', msg => {
                 deny: ['SEND_MESSAGES'],
             }, ], 'Lockdown');
         }
-    }, 5000)
+    }, 60000)
 
 });
 
