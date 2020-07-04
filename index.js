@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 
 client.on('message', msg => {
-    if (msg.author.bot || !msg.channel.id == 728940889363447879) return;
+    if (msg.author.bot || !msg.channel.id == 728912408344526889) return;
     global.lastMessenger = msg.author.id;
 
     setTimeout(function () {
@@ -16,11 +16,11 @@ client.on('message', msg => {
             msg.channel.send('<@' + msg.author.id + '> Won');
 
             msg.channel.overwritePermissions([{
-                id: '725621158652674099',
+                id: '718475918162657362',
                 deny: ['SEND_MESSAGES'],
             }, ], 'Lockdown');
         }
-    }, 3000)
+    }, 120000)
 
 });
 
